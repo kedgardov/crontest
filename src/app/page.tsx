@@ -44,7 +44,7 @@ export default function Home(){
             <div className="grid grid-cols-5 grid-rows-1 flex-1 px-18">
 
                 <div className="col-start-1 col-span-3 grid grid-rows-5">
-                    <p className="row-start-1 text-3xl self-end px-2 font-semibold">Hi, I'm Kevin</p>
+                    <p className="row-start-1 text-3xl self-end px-2 font-semibold">{t("hi_im_kevin")}</p>
                     <h1 className="row-start-2 row-span-2 text-9xl font-semibold">FULL STACK DEVELOPER</h1>
                     <p className="row-start-4 px-2">I’m a fullstack developer who thrives on building end-to-end web solutions, handling everything from front-end interfaces to back-end APIs, database design, and server architecture. With experience in Next.js, FastAPI, FlightPHP, Docker, MySQL, Python, Bash, and TailwindCSS, I design and deploy robust, scalable systems, including load balancers (Caddy, Nginx), CI/CD pipelines, automated workflows, and containerized deployments, ensuring reliable production environments.</p>
                     <Link className="border w-fit h-fit p-4 rounded-full mx-2 text-white/60 hover:text-white/100" href={"/projects"}>VIEW MY PROJECTS</Link>

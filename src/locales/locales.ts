@@ -21,7 +21,11 @@ export const locales = {
     meta_description: {
         en: "Kevin Trejo project's portfolio",
         es: "Portafolio de proyectos de Kevin Trejo",
-    }
+    },
+    hi_im_kevin: {
+        en: "HI, I'm Kevin",
+        es: "Hola, soy Kevin",
+    },
 }
 
 export function getLocale(): SupportedLangs{
