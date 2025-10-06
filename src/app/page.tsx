@@ -47,7 +47,7 @@ export default function Home(){
                     <p className="row-start-1 text-3xl self-end px-2 font-semibold">{t("hi_im_kevin")}</p>
                     <h1 className="row-start-2 row-span-2 text-9xl font-semibold uppercase">{t("full_stack_developer")}</h1>
                     <p className="row-start-4 px-2">{t("my_descriptiion")}</p>
-                    <Link className="border w-fit h-fit p-4 rounded-full mx-2 text-white/60 hover:text-white/100" href={"/projects"}>VIEW MY PROJECTS</Link>
+                    <Link className="border w-fit h-fit p-4 rounded-full mx-2 text-white/60 hover:text-white/100 uppercase" href={"/projects"}>{t("view_projects")}</Link>
                 </div>
 
                 <div className="w-full h-full relative col-span-2">
