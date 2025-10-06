@@ -1,10 +1,20 @@
 services:
-  next:
-    image: portfolio
-    container_name: portfolio
+  portfolio_a:
+    image: portfolio_a
+    container_name: portfolio_a
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3001:3000"
+    restart: unless-stopped
+
+  portfolio_b:
+    image: portfolio_b
+    container_name: portfolio_b
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3000"
     restart: unless-stopped
