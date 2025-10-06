@@ -26,6 +26,10 @@ export const locales = {
         en: "HI, I'm Kevin",
         es: "Hola, soy Kevin",
     },
+    full_stack_developer: {
+        en: "Full Stack Developer",
+        es: "Desarrollador Full Stack",
+    },
 }
 
 export function getLocale(): SupportedLangs{
