@@ -43,11 +43,11 @@ export const locales = {
 export function getLocale(): SupportedLangs{
     const n = navigator;
     if ( !n ) {
-        return 'en';
-    }
-    const l = n.language.split('-')[0];
-    if ( l === 'es' ) {
         return 'es';
     }
-    return 'en';
+    const l = n.language.split('-')[0];
+    if ( l === 'en' ) {
+        return 'en';
+    }
+    return 'es';
 }

@@ -27,7 +27,7 @@ export default function RootLayout({
     return (
       <html lang="en">
           <body
-              className={`${montserrat.variable} bg-red-500 antialiased w-screen h-dvh`}
+              className={`${montserrat.variable} bg-red-500 antialiased w-full h-dvh`}
           >
           <div className="font-montserrat text-white w-full h-full bg-radial-[at_85%_60%] from-gray-700 to-gray-950 flex flex-col">
           <Navbar
