@@ -2,6 +2,7 @@ export type LocaleKeys = keyof typeof locales;
 export type SupportedLangs = "en" | "es";
 
 export const locales = {
+    //navbar
     home: {
         en:"HOME",
         es:"INICIO",
@@ -18,6 +19,7 @@ export const locales = {
         en: "ABOUT",
         es: "ACERCA",
     },
+    //home
     meta_description: {
         en: "Kevin Trejo project's portfolio",
         es: "Portafolio de proyectos de Kevin Trejo",
@@ -37,5 +39,14 @@ export const locales = {
     view_projects: {
         en: "VIEW MY PROJECTS",
         es: "VER MIS PROYECTOS"
+    },
+    //contact
+    message_sent: {
+        en: "Message sent!",
+        es: "Mensage enviado",
+    },
+    messate_not_sent: {
+        en: "Something went wrong",
+        es: "Algo salió mal",
     }
 }

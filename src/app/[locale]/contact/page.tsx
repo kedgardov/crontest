@@ -1,5 +1,6 @@
 "use client"
 
+import useTranslation, { parseLocale } from "@/hooks/useTranslation";
 import { TelegramMessageSchema, TelegramMessageType } from "@/models/telegramMessage";
 import { postToTelegramUtil } from "@/utils/postToTelegramUtil";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -7,8 +8,14 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { CiMail } from "react-icons/ci";
 import { FaLinkedin, FaYoutube, FaGithub } from "react-icons/fa";
 
-export default function Contact(){
-    
+export default async function Contact({
+    params,
+}:{
+    params: { locale: string },
+}){
+    const lang = await params;
+    const locale = parseLocale(lang.locale);
+    const { t } = useTranslation(locale);
 
     const { register, handleSubmit, formState: { errors } } = useForm<TelegramMessageType>({
         resolver: zodResolver(TelegramMessageSchema),
@@ -18,9 +25,9 @@ export default function Contact(){
     const onSubmit: SubmitHandler<TelegramMessageType> = async ( data ) => {
         const res = await postToTelegramUtil(data);
         if ( res.success ) {
-            alert("Message sent!");
+            alert(t("message_sent"));
         } else {
-            alert("Something went wrong");
+            alert(t("messate_not_sent"));
         }
     }
 
