@@ -8,6 +8,9 @@ services:
     ports:
       - "3001:3000"
     restart: unless-stopped
+    environment:
+      - TG_TOKEN=${TG_TOKEN}
+      - TG_CHAT=${TG_CHAT}
 
   portfolio_b:
     image: portfolio_b
@@ -18,3 +21,6 @@ services:
     ports:
       - "3002:3000"
     restart: unless-stopped
+    environment:
+      - TG_TOKEN=${TG_TOKEN}
+      - TG_CHAT=${TG_CHAT}

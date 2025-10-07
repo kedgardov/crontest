@@ -32,5 +32,14 @@ body {
   .nav-element {
     @apply p-2 text-white/65 hover:text-white/100;
   }
+  .icon-big {
+    @apply w-12 h-12;
+  }
+  .input {
+    @apply p-2 bg-white/80 text-black rounded-lg;
+  }
+  .input-error {
+    @apply outline-2 outline-red-600;
+  }
 }
 
