@@ -28,9 +28,9 @@ export const locales = {
     },
     full_stack_developer: {
         en: "Full Stack Developer",
-        es: "Desarrollador Full Stack",
+        es: "Developer Full Stack",
     },
-    my_descriptiion: {
+    my_description: {
         en: "I’m a fullstack developer who thrives on building end-to-end web solutions, handling everything from front-end interfaces to back-end APIs, database design, and server architecture. With experience in Next.js, FastAPI, FlightPHP, Docker, MySQL, Python, Bash, and TailwindCSS, I design and deploy robust, scalable systems, including load balancers (Caddy, Nginx), CI/CD pipelines, automated workflows, and containerized deployments, ensuring reliable production environments.",
         es:"Soy un desarrollador fullstack que disfruta construyendo soluciones web de extremo a extremo, manejando todo, desde las interfaces de front-end hasta las APIs de back-end, el diseño de bases de datos y la arquitectura de servidores. Con experiencia en Next.js, FastAPI, FlightPHP, Docker, MySQL, Python, Bash y TailwindCSS, diseño y despliego sistemas robustos y escalables, incluyendo balanceadores de carga (Caddy, Nginx), pipelines de CI/CD, flujos de trabajo automatizados y despliegues en contenedores, asegurando entornos de producción confiables."
     },
@@ -38,16 +38,4 @@ export const locales = {
         en: "VIEW MY PROJECTS",
         es: "VER MIS PROYECTOS"
     }
-}
-
-export function getLocale(): SupportedLangs{
-    const n = navigator;
-    if ( !n ) {
-        return 'es';
-    }
-    const l = n.language.split('-')[0];
-    if ( l === 'en' ) {
-        return 'en';
-    }
-    return 'es';
 }
