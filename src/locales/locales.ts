@@ -48,5 +48,13 @@ export const locales = {
     messate_not_sent: {
         en: "Something went wrong",
         es: "Algo salió mal",
-    }
+    },
+    cta: {
+        en: "Leave a Message",
+        es: "Deje un Mensaje",
+    },
+    send_message: {
+        en: "Send Message",
+        es: "Enviar Mensaje",
+    },
 }

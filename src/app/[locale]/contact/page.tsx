@@ -4,16 +4,17 @@ import useTranslation, { parseLocale } from "@/hooks/useTranslation";
 import { TelegramMessageSchema, TelegramMessageType } from "@/models/telegramMessage";
 import { postToTelegramUtil } from "@/utils/postToTelegramUtil";
 import { zodResolver } from "@hookform/resolvers/zod";
+import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { CiMail } from "react-icons/ci";
 import { FaLinkedin, FaYoutube, FaGithub } from "react-icons/fa";
 
-export default async function Contact({
+export default function Contact({
     params,
 }:{
-    params: { locale: string },
+    params: Promise<{ locale: string }>,
 }){
-    const lang = await params;
+    const lang = React.use(params);
     const locale = parseLocale(lang.locale);
     const { t } = useTranslation(locale);
 
@@ -42,12 +43,12 @@ export default async function Contact({
             </div>
             
             <form onSubmit={handleSubmit(onSubmit)} className="flex-1 space-y-4 flex flex-col">
-                <h2 className="text-3xl font-medium select-none">Leave a Message</h2>
+                <h2 className="text-3xl font-medium select-none">{t("cta")}</h2>
                 <input type="text" placeholder="Name" className={`input w-full ${errors.name? 'input-error':''}`} {...register("name")} />
                 <input type="email"  placeholder="Email" className={`input w-full ${errors.email? 'input-error':''}`} {...register("email")} />
                 <textarea placeholder="Message" className={`input w-full flex-1 ${errors.message? 'input-error':''}`} {...register("message")} />
                 <div className="w-full justify-center flex">
-                    <button className="p-2 w-fit border rounded-full" type="submit">Send Message</button>
+                    <button className="p-2 w-fit border rounded-full" type="submit">{t("send_message")}</button>
                 </div>
             </form>
 
