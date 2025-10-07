@@ -11,7 +11,7 @@ export default function Home(){
 
     return (
         // <div className="tracking-wide grid grid-cols-5 grid-rows-1 flex-1 px-18">
-            <div className="tracking-wide flex flex-col h-full w-full p-4 place-content-between">
+            <div className="tracking-wide flex flex-col h-full w-full p-4 place-content-between space-y-4">
 
             <div className="flex flex-col">
                 <p className="text-4xl px-1">{t("hi_im_kevin")}</p>
