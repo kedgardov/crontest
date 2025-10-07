@@ -22,7 +22,7 @@ export default function Navbar({
             </Link>
 
             <div className="flex items-center">
-                <div className="flex items-center scale-0 sm:scale-100">
+                <div className="items-center hidden sm:flex">
                     <Link className="nav-element" href={"/"}>
                         {t("home")}
                     </Link>

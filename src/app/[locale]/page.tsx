@@ -22,7 +22,7 @@ export default async function Home({
                     <p className="my-4 scale-0 lg:scale-100">{t("my_description")}</p>
                 </div>
                 
-                <div className="aspect-square h-1/2 relative bg-gradient-to-br from-gray-700 to-gray-900 rounded-full overflow-clip shadow-2xl place-self-center block lg:hidden lg:h-">
+                <div className="aspect-square h-1/2 relative bg-gradient-to-br from-gray-700 to-gray-900 rounded-full overflow-clip shadow-2xl place-self-center block lg:hidden">
                     <Image
                         draggable={false}
                         className="object-scale-down scale-175 m-4"
@@ -33,7 +33,7 @@ export default async function Home({
                     />
                 </div>
                 <div className="h-1/4 flex items-center justify-center lg:h-1/3">
-                    <Link className="border w-fit h-fit p-4 rounded-full mx-2 text-white/70 hover:text-white/100 uppercase shadow-2xl lg:text-2xl" href={"/projects"}>{t("view_projects")}</Link>
+                    <Link className="border w-fit h-fit p-4 rounded-full mx-2 text-white/70 hover:text-white/100 uppercase shadow-2xl lg:text-2xl select-none" href={"/projects"}>{t("view_projects")}</Link>
                 </div>
             </div>
             <div className="aspect-square relative hidden lg:block lg:w-2/5 xl:2-2/5">
