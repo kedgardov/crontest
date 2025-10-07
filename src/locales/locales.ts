@@ -57,4 +57,16 @@ export const locales = {
         en: "Send Message",
         es: "Enviar Mensaje",
     },
+    name: {
+        en: "Name",
+        es: "Nombre",
+    },
+    email: {
+        en: "Email",
+        es: "Email",
+    },
+    message: {
+        en: "Write you message",
+        es: "Escriba su mensaje",
+    },
 }
