@@ -14,36 +14,35 @@ export default function Navbar({
     const { t } = useTranslation(locale);
 
     return (
-        <nav className={`${className} p-4 border-b-1 border-white/25 flex items-center justify-between tracking-wide`}>
+        <nav className={`${className} div`}>
             <Link href={"/"} draggable={false}>
                 <p className="tracking-widest text-3xl font-semibold text-white/60 select-none" draggable={false}>
                     {'<KT/>'}
                 </p>
             </Link>
-
-            <div className="flex items-center">
-                <div className="items-center hidden sm:flex">
-                    <Link className="nav-element" href={"/"}>
-                        {t("home")}
-                    </Link>
-                    <Link className="nav-element" href="/projects">
-                        {t("projects")}
-                    </Link>
-                    <Link className="nav-element" href="contact">
-                        {t("contact")}
-                    </Link>
-                    <Link className="nav-element" href="/about">
-                        {t("about")}
-                    </Link>
-                </div>
+            <div className="div justify-end w-0 sm:w-full overflow-hidden trans">
+                <Link className="nav-element" href={"/"}>
+                    {t("home")}
+                </Link>
+                <Link className="nav-element" href="/projects">
+                    {t("projects")}
+                </Link>
+                <Link className="nav-element" href="contact">
+                    {t("contact")}
+                </Link>
+                <Link className="nav-element" href="/about">
+                    {t("about")}
+                </Link>
+            </div>
+            <div className="div ml-auto">
                 <a className="nav-element" href="https://github.com/kedgardov" target="__blank" title="github-link">
-                    <FaGithub className="h-5 w-5"/>
+                    <FaGithub className="icon-small"/>
                 </a>
                 <a className="nav-element flex space-x-1" href="https://www.youtube.com/watch?v=TtIPNrUdft0" target="__blank" title="youtube-link">
-                    <FaYoutube className="h-5 w-5"/>
+                    <FaYoutube className="icon-small"/>
                 </a>
                 <a className="nav-element flex space-x-1" href="https://www.linkedin.com/in/ktrejo/" target="__blank" title="linkdedin-link">
-                    <FaLinkedinIn className="h-5 w-5"/>
+                    <FaLinkedinIn className="icon-small"/>
                 </a>
             </div>
         </nav>

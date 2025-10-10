@@ -36,49 +36,53 @@ export default function Contact({
     }
 
     return (
-        <div className="p-4 flex flex-col w-full h-full tracking-wide gap-6 text-white">
-            <div className="space-y-2 border-b border-white/40 md:border-white/0 transition-all ease-in-out duration-500">
-                <p className="text-5xl font-semibold uppercase">Kevin Trejo</p>
-                <a href="mailto:kevintrejo4b@gmail.com" className="flex items-center gap-2">
-                    <CiMail className="w-5 h-5"/>
-                    <p className="tracking-widest">kevintrejo4b@gmail.com</p>
-                </a>
-            </div>
-            
-            <div className="flex-1 flex w-full ">
-                <form onSubmit={handleSubmit(onSubmit)} className="md:pr-4 h-full space-y-4 flex-1 flex flex-col transition-all ease-in-out duration-500">
-                    <h2 className="text-3xl font-medium select-none">{t("cta")}</h2>
-                    <input type="text" placeholder={t("name")} className={`input w-full ${errors.name? 'input-error':''}`} {...register("name")} />
-                    <input type="email"  placeholder={t("email")} className={`input w-full ${errors.email? 'input-error':''}`} {...register("email")} />
-                    <textarea placeholder={t("message")} className={`input w-full flex-1 ${errors.message? 'input-error':''}`} {...register("message")} />
-                    <div className="w-full justify-center flex">
-                        <button className="p-2 w-fit border rounded-full" type="submit">{t("send_message")}</button>
+        <div className="flex flex-col w-full h-full ">
+            <div className="w-full flex flex-1  items-center">
+                <div className="w-full lg:w-1/2 flex flex-col items-center h-3/4 gap-4 trans">
+
+                    <div className="w-full text-center ">
+                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl tracking-wide font-semibold text-highlight trans">Kevin Trejo</h1>
+                        <div className="div text-white/65 sm:text-xl md:text-2xl lg:text-xl xl:text-2xl tracking-wider justify-center trans">
+                            <CiMail className="icon-small stroke-1"/>
+                            <a href="mailto:kevintrejo4b@gmail.com">kevintrejo4b@gmail.com</a>
+                        </div>
                     </div>
-                </form>
-                    <div className="w-0 md:w-1/3 max-w-[60svh] self-center bg-gradient-to-tl from-gray-900/80 to-gray-900/50 shadow aspect-square relative overflow-clip rounded-full transition-all ease-in-out duration-500">
+                    <form onSubmit={handleSubmit(onSubmit)} className="w-4/5 flex flex-col gap-4 flex-1">
+                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl tracking-wide trans">{t("cta")}</h2>
+                        <input type="text" placeholder={t("name")} className={`input w-full ${errors.name? 'input-error':''}`} {...register("name")} />
+                        <input type="email"  placeholder={t("email")} className={`input w-full ${errors.email? 'input-error':''}`} {...register("email")} />
+                        <textarea placeholder={t("message")} className={`input w-full flex-1 ${errors.message? 'input-error':''}`} {...register("message")} />
+                        <div className="w-full flex justify-center">
+                            <button className="text-xl tracking-wide font-bold xl:text-2xl md:text-2xl lg:text-xl p-2 w-fit border-2 border-highlight text-highlight shadow-2xl hover:font-extrabold bg-primary/80 trans" type="submit">{t("send_message")}</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div className="w-0 lg:w-1/2 h-full flex flex-col trans justify-center">
+                    <div className="relative w-full h-3/4 overflow-clip [clip-path:circle(45%_at_50%_50%)] xl:[clip-path:circle(35%_at_50%_50%)] trans">
                         <Image
                             draggable={false}
-                            className="object-contain m-4 scale-125"
+                            className="object-contain object-bottom m-4"
                             src="/images/me.png"
                             alt="me suit"
                             fill
                             sizes="(max-width: 640px) 50vh, (max-width: 1024px) 50vw, 33vw"
-                            />
+                        />
                     </div>
+                </div>
             </div>
-
-            <div className="flex items-center place-content-between border-t border-white/40 p-4 mt-auto">
-                <div className=""></div>
-                <a className="">
-                    <FaYoutube className="icon-big" title="youtube-link" />
-                </a>
-                <a className="">
-                    <FaGithub className="icon-big" title="github-link" />
-                </a>
-                <a className="">
-                    <FaLinkedin className="icon-big" title="linkedin-link" />
-                </a>
-                <div className=""></div>
+            <div className="div text-white/80 justify-between">
+                <div></div>
+                    <a href="https://www.youtube.com/watch?v=TtIPNrUdft0" className="">
+                        <FaYoutube className="w-8 h-8 md:w-12 md:h-12 lg:h-8 lg:w-8 xl:w-12 xl:h-12 trans" title="youtube-link" />
+                    </a>
+                    <a href="https://github.com/kedgardov" className="">
+                        <FaGithub className="w-8 h-8 md:w-12 md:h-12 lg:h-8 lg:w-8 xl:w-12 xl:h-12 trans" title="github-link" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/ktrejo/" className="">
+                        <FaLinkedin className="w-8 h-8 md:w-12 md:h-12 lg:h-8 lg:w-8 xl:w-12 xl:h-12 trans" title="linkedin-link" />
+                    </a>
+                <div></div>
             </div>
         </div>
     )

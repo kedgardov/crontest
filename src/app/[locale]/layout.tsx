@@ -35,8 +35,9 @@ export default async function RootLayout({
           <body
               className={`${montserrat.variable} antialiased w-full h-dvh`}
           >
-          <div className="font-montserrat text-white w-full h-full flex flex-col">
-            <div className="-z-10 fixed w-dvw h-dvh bg-radial-[at_85%_60%] from-gray-700 to-gray-950">
+          <div className="font-montserrat text-white w-full h-full flex flex-col p-4">
+
+            <div className="-z-50 fixed top-0 left-0 w-dvw h-dvh bg-radial-[at_85%_60%] from-primary/95 to-primary">
                 <p className="text-5xl xl:text-7xl text-pretty text-justify select-none text-white/2">{randomSnippet}</p>
             </div>
 

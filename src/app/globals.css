@@ -9,6 +9,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
+  --color-primary: #192036;
+  --color-highlight: #AF5726;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-montserrat: var(--font-montserrat);
@@ -29,17 +32,48 @@ body {
 }
 
 @layer utilities {
-  .nav-element {
-    @apply p-2 text-white/65 hover:text-white/100;
+  .div {
+    @apply flex items-center gap-4;
+  }
+  .trans {
+    @apply transition-all ease-in-out duration-500;
   }
   .icon-big {
     @apply w-12 h-12;
   }
+  .icon-mid {
+    @apply w-8 h-8;
+  }
+  .icon-small {
+    @apply w-5 h-5;
+  }
   .input {
-    @apply p-2 bg-white/80 text-black rounded-lg;
+    @apply p-2 bg-white text-black;
   }
   .input-error {
     @apply outline-2 outline-red-600;
+  }
+
+
+  .nav-element {
+    @apply text-white/65 hover:text-white/100 text-xl;
+  }
+
+  .about-container {
+    @apply
+      w-full h-full
+      flex flex-col items-center
+      xl:flex-row
+      transition-all ease-in-out duration-500;
+  }
+  .about-section {
+    @apply
+      w-full      h-[70dvh]       max-w-xl
+      xl:w-1/3    xl:h-[90dvh]
+
+      flex flex-col
+      p-8 border
+      transition-all ease-in-out duration-500;
   }
 }
 
