@@ -18,29 +18,27 @@ export default async function Home({
 
                 <div className="w-full h-full flex flex-col justify-between">
                     <div className="">
-                        <p className="text-pretty tracking-wider text-xl sm:text-3xl xl:mx-2 text-white trans">Hi, I'm Kevin</p>
-                        <h1 className="text-highlight text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl uppercase font-bold trans">Full Stack Developer</h1>
-                        <p className="text-pretty tracking-wider text-md sm:text-lg xl:text-xl text-gray-200 trans">
+                        <p className="text-pretty tracking-widest text-xl sm:text-3xl xl:mx-2 text-white trans">Hi, I'm Kevin</p>
+                        <h1 className="text-highlight text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl tracking-wider uppercase font-bold trans">Full Stack Developer</h1>
+                        <p className="text-pretty tracking-wider text-md sm:text-lg xl:text-xl/10 text-white/65 md:pr-8 trans">
                             Five years experience with Next,js, FastAPI, FlightPHP, Docker, SQL, 
                             Typescript, Python, PHP, GO, Bash, TailwindCss,
                             CI/CD, Caddy, Git, UI/UX, Linux
                         </p>
                     </div>
-                    <div className="w-full flex justify-center">
+                    <div className="w-full flex justify-center md:justify-start xl:justify-center trans">
                         <Link className="text-xl font-bold sm:text-2xl sm:p-4 p-2 w-fit border-2 border-highlight text-highlight shadow-2xl hover:font-extrabold bg-primary/80 trans" href="/projects">View Projects</Link>
                     </div>
                     <div></div>
                 </div>
 
             </div>
-            {/* <div className="-z-20 bg-highlight/80 w-full h-full fixed top-0 left-0 lg:[clip-path:polygon(55%_100%,62%_60%,75%_25%,88%_60%,95%_100%)] [clip-path:polygon(10%_100%,20%_70%,50%_60%,80%_70%,90%_100%)] trans">
-
-            </div> */}
+      
             <div className="w-0 lg:w-1/2 h-full">
-                <div className="w-full h-full relative overflow-clip">
+                <div className="w-full h-full relative">
                     <Image
                         draggable={false}
-                        className="object-contain object-bottom m-4"
+                        className="object-contain object-bottom"
                         src="/images/me.png"
                         alt="me suit"
                         fill
