@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Projects(){
     return (
-    <div className="w-full flex flex-col items-center gap-6 md:gap-0 border-t border-white/65">
+    <div className="w-full flex flex-col items-center gap-6 md:gap-0 border-t border-white/30">
         <div className="w-fit md:order-b-4 border-highlight p-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-wide font-semibold text-highlight trans">Work Experience</h1>
 

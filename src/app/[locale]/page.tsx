@@ -13,7 +13,7 @@ export default async function Home({
     const { t } = useTranslation(l);
 
     return (
-        <div className="h-full w-full flex items-center">
+        <div className="h-full w-full flex items-center border-t  border-white/30">
             <div className="w-full h-2/3 lg:w-1/2 p-4 flex items-center trans">
 
                 <div className="w-full h-full flex flex-col justify-between">

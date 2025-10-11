@@ -36,7 +36,7 @@ export default function Contact({
     }
 
     return (
-        <div className="flex flex-col w-full h-full ">
+        <div className="flex flex-col w-full h-full border-t border-white/30">
             <div className="w-full flex flex-1  items-center">
                 <div className="w-full lg:w-1/2 flex flex-col items-center h-3/4 gap-4 trans">
 

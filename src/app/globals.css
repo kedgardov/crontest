@@ -56,7 +56,13 @@ body {
 
 
   .nav-element {
-    @apply text-white/65 hover:text-white/100 text-xl;
+    @apply hover:text-white/100 text-xl;
+  }
+  .nav-element-active {
+    @apply text-white;
+  }
+  .nav-element-inactive {
+    @apply text-white/65;
   }
 
   .about-container {
