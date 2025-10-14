@@ -80,7 +80,7 @@ export default function About(){
                     <div className="w-4/5 h-4/5">
                         <h2 className="uppercase text-3xl text-highlight font-semibold tracking-wider">Skills</h2>
                         <h3 className="uppercase text-white tracking-wider">Technologies</h3>
-                        <p className="text-white/65">Next.js, FastAPI, FlightPHP, SQL, OpenAPI, Docker, Git</p>
+                        <p className="text-white/65">Next.js, FastAPI, FlightPHP, SQL, OpenAPI, Docker, OpenAPI, Git, Linux</p>
                         <h3 className="uppercase text-white tracking-wider">Languages</h3>
                         <p className="text-white/65">Spanish, English, Typescript Python, PHP, Go, Bash</p>
                     </div>
