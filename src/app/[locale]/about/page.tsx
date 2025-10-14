@@ -21,7 +21,7 @@ export default async function About({
                             draggable={false}
                             className="object-cover object-center"
                             src="/images/nmsu.png"
-                            alt="me suit"
+                            alt={t("nmsu_alt")}
                             fill
                             sizes="(max-width: 640px) 50vh, (max-width: 1024px) 50vw, 33vw"
                         />
@@ -52,7 +52,7 @@ export default async function About({
                             draggable={false}
                             className="object-cover object-center"
                             src="/images/hobby.png"
-                            alt="me suit"
+                            alt={t("hobby_alt")}
                             fill
                             sizes="(max-width: 640px) 50vh, (max-width: 1024px) 50vw, 33vw"
                         />
@@ -78,7 +78,7 @@ export default async function About({
                         <iframe
                             className="absolute top-0 left-0 w-full h-full object-cover"
                             src="https://www.youtube.com/embed/TtIPNrUdft0?si=e18RCu1RsfFKQktK&start=1"
-                            title="YouTube video player"
+                            title={t("skills_alt")}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen

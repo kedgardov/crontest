@@ -64,7 +64,7 @@ export default function Contact({
                             draggable={false}
                             className="object-contain object-bottom m-4"
                             src="/images/me.png"
-                            alt="me suit"
+                            alt={t("me_alt")}
                             fill
                             sizes="(max-width: 640px) 50vh, (max-width: 1024px) 50vw, 33vw"
                         />

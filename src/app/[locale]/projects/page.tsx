@@ -40,7 +40,7 @@ export default async function Projects({
                         draggable={false}
                         className="object-fill scale-105"
                         src="/images/sofia.png"
-                        alt="sofia"
+                        alt={t("sofia_alt")}
                         fill
                         sizes="(max-width: 640px) 50vh, (max-width: 1024px) 50vw, 33vw"
                     />
@@ -70,7 +70,7 @@ export default async function Projects({
                         draggable={false}
                         className="object-fill scale-105"
                         src="/images/bot.png"
-                        alt="sofia"
+                        alt={t("cryptobot_alt")}
                         fill
                         sizes="(max-width: 640px) 50vh, (max-width: 1024px) 50vw, 33vw"
                     />
@@ -99,7 +99,7 @@ export default async function Projects({
                         draggable={false}
                         className="object-fill scale-105"
                         src="/images/reportes.png"
-                        alt="sofia"
+                        alt={t("cpa_alt")}
                         fill
                         sizes="(max-width: 640px) 50vh, (max-width: 1024px) 50vw, 33vw"
                     />
@@ -128,7 +128,7 @@ export default async function Projects({
                         draggable={false}
                         className="object-fill scale-105"
                         src="/images/maria.png"
-                        alt="sofia"
+                        alt={t("maria_alt")}
                         fill
                         sizes="(max-width: 640px) 50vh, (max-width: 1024px) 50vw, 33vw"
                     />

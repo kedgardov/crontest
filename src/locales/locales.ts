@@ -20,6 +20,10 @@ export const locales = {
         es: "ACERCA",
     },
     //home
+    me_alt: {
+        en: "me",
+        es: "yo",
+    },
     meta_description: {
         en: "Kevin Trejo project's portfolio",
         es: "Portafolio de proyectos de Kevin Trejo",
@@ -149,6 +153,18 @@ export const locales = {
     langs: {
         en: "Spanish, English, Typescript, Python, PHP, Go, Bash",
         es: "Spanish, English, Typescript, Python, PHP, Go, Bash",
+    },
+    nmsu_alt: {
+        en: "nmsu",
+        es: "nmsu",
+    },
+    hobby_alt: {
+        en: "my_hobby",
+        es: "mi_pasatiempo",
+    },
+    skills_alt: {
+        en: "my_youtube",
+        es: "mi_youtube",
     },
     //projects
     work_experience: {
