@@ -18,16 +18,12 @@ export default async function Home({
 
                 <div className="w-full h-full flex flex-col justify-between">
                     <div className="">
-                        <p className="text-pretty tracking-widest text-xl sm:text-3xl xl:mx-2 text-white trans">Hi, I'm Kevin</p>
-                        <h1 className="text-highlight text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl tracking-wider uppercase font-bold trans">Full Stack Developer</h1>
-                        <p className="text-pretty tracking-wider text-md sm:text-lg xl:text-xl/10 text-white/65 md:pr-8 trans">
-                            Five years experience with Next,js, FastAPI, FlightPHP, Docker, SQL, OpenAPI, 
-                            Typescript, Python, PHP, GO, Bash, TailwindCss,
-                            CI/CD, Caddy, Git, UI/UX, Linux
-                        </p>
+                        <p className="text-pretty tracking-widest text-xl sm:text-3xl xl:mx-2 text-white trans">{t("hi_im_kevin")}</p>
+                        <h1 className="text-highlight text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl tracking-wider uppercase font-bold trans">{t("full_stack_developer")}</h1>
+                        <p className="text-pretty tracking-wider text-md sm:text-lg xl:text-xl/10 text-white/65 md:pr-8 trans">{t("my_description")}</p>
                     </div>
                     <div className="w-full flex justify-center md:justify-start xl:justify-center trans">
-                        <Link className="text-xl font-bold sm:text-2xl sm:p-4 p-2 w-fit border-2 border-highlight text-highlight shadow-2xl hover:font-extrabold bg-primary/80 trans" href="/projects">View Projects</Link>
+                        <Link className="text-xl font-bold sm:text-2xl sm:p-4 p-2 w-fit border-2 border-highlight text-highlight shadow-2xl hover:font-extrabold bg-primary/80 trans" href="/projects">{t("view_projects")}</Link>
                     </div>
                     <div></div>
                 </div>

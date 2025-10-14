@@ -1,6 +1,15 @@
+import useTranslation, { parseLocale } from "@/hooks/useTranslation";
 import Image from "next/image";
 
-export default function About(){
+export default async function About({
+    params,
+}:{
+    params: Promise<{locale: string}>
+}){
+    const lang = await params;
+    const l = parseLocale(lang.locale);
+    const { t } = useTranslation(l);
+
     return (
         <div className="w-full h-full flex flex-col items-center xl:flex-row border-t gap-4 border-white/30">
 
@@ -21,16 +30,16 @@ export default function About(){
                 <div className="h-2/5 flex items-center justify-center order-2">
                     {/* <div className="w-4/5 h-4/5 [text-shadow:2_2_12_#000000]"> */}
                     <div className="w-4/5 h-4/5">
-                        <h2 className="uppercase text-3xl text-highlight font-semibold tracking-wider">Education</h2>
-                        <h3 className="uppercase text-white tracking-wider">College</h3>
+                        <h2 className="uppercase text-3xl text-highlight font-semibold tracking-wider">{t("education")}</h2>
+                        <h3 className="uppercase text-white tracking-wider">{t("college")}</h3>
                         <ul className="list-disc list-inside text-white/65">
-                            <li>UACH -  Chihuahua</li>
-                            <li>NMSU - New Mexico</li>
+                            <li>{t("uach")}</li>
+                            <li>{t("nmsu")}</li>
                         </ul>
-                        <h3 className="uppercase text-white tracking-wider">Degrees</h3>
+                        <h3 className="uppercase text-white tracking-wider">{t("degrees")}</h3>
                         <ul className="list-disc list-inside text-white/65">
-                            <li>Aerospace Engineering</li>
-                            <li>Mechanical Engineering</li>
+                            <li>{t("ae_eng")}</li>
+                            <li>{t("m_eng")}</li>
                         </ul>
                     </div>
                 </div>
@@ -51,13 +60,13 @@ export default function About(){
                 </div>
                 <div className="h-2/5 flex items-center justify-center order-1 xl:order-1">
                     <div className="w-4/5 h-4/5 flex flex-col justify-end">
-                        <h2 className="uppercase text-3xl text-highlight font-semibold tracking-wider">Hobbies</h2>
+                        <h2 className="uppercase text-3xl text-highlight font-semibold tracking-wider">{t("hobbies")}</h2>
                         <ul className="list-disc list-inside text-white/65">
-                            <li>Hiking</li>
-                            <li>Chess</li>
-                            <li>Basketball</li>
-                            <li>Mountain Biking</li>
-                            <li>Math Challenges</li>
+                            <li>{t("hiking")}</li>
+                            <li>{t("chess")}</li>
+                            <li>{t("basketball")}</li>
+                            <li>{t("mountain_biking")}</li>
+                            <li>{t("math_challenges")}</li>
                         </ul>
                     </div>
                 </div>
@@ -78,16 +87,14 @@ export default function About(){
                 </div>
                 <div className="h-2/5 flex items-center justify-center order-2">
                     <div className="w-4/5 h-4/5">
-                        <h2 className="uppercase text-3xl text-highlight font-semibold tracking-wider">Skills</h2>
-                        <h3 className="uppercase text-white tracking-wider">Technologies</h3>
-                        <p className="text-white/65">Next.js, FastAPI, FlightPHP, SQL, OpenAPI, Docker, OpenAPI, Git, Linux</p>
-                        <h3 className="uppercase text-white tracking-wider">Languages</h3>
-                        <p className="text-white/65">Spanish, English, Typescript Python, PHP, Go, Bash</p>
+                        <h2 className="uppercase text-3xl text-highlight font-semibold tracking-wider">{t("skills")}</h2>
+                        <h3 className="uppercase text-white tracking-wider">{t("technologies")}</h3>
+                        <p className="text-white/65">{t("techs")}</p>
+                        <h3 className="uppercase text-white tracking-wider">{t("languages")}</h3>
+                        <p className="text-white/65">{t("langs")}</p>
                     </div>
                 </div>
             </div>
-
-
             
         </div>
     );

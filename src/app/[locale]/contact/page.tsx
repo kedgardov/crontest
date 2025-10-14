@@ -31,7 +31,7 @@ export default function Contact({
         if ( res.success ) {
             alert(t("message_sent"));
         } else {
-            alert(t("messate_not_sent"));
+            alert(t("message_not_sent"));
         }
     }
 
@@ -41,10 +41,10 @@ export default function Contact({
                 <div className="w-full lg:w-1/2 flex flex-col items-center h-3/4 gap-4 trans">
 
                     <div className="w-full text-center ">
-                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl tracking-wide font-semibold text-highlight trans">Kevin Trejo</h1>
+                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl tracking-wide font-semibold text-highlight trans">{t("kevin_trejo")}</h1>
                         <div className="div text-white/65 sm:text-xl md:text-2xl lg:text-xl xl:text-2xl tracking-wider justify-center trans">
                             <CiMail className="icon-small stroke-1"/>
-                            <a href="mailto:kevintrejo4b@gmail.com">kevintrejo4b@gmail.com</a>
+                            <a href="mailto:kevintrejo4b@gmail.com">{t("my_email")}</a>
                         </div>
                     </div>
                     <form onSubmit={handleSubmit(onSubmit)} className="w-4/5 flex flex-col gap-4 flex-1">

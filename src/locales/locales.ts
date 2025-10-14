@@ -30,22 +30,30 @@ export const locales = {
     },
     full_stack_developer: {
         en: "Full Stack Developer",
-        es: "Developer Full Stack",
+        es: "Full Stack Developer",
     },
     my_description: {
-        en: "I’m a fullstack developer who thrives on building end-to-end web solutions, handling everything from front-end interfaces to back-end APIs, database design, and server architecture. With experience in Next.js, FastAPI, FlightPHP, Docker, MySQL, Python, Bash, and TailwindCSS, I design and deploy robust, scalable systems, including load balancers (Caddy, Nginx), CI/CD pipelines, automated workflows, and containerized deployments, ensuring reliable production environments.",
-        es:"Soy un desarrollador fullstack que disfruta construyendo soluciones web de extremo a extremo, manejando todo, desde las interfaces de front-end hasta las APIs de back-end, el diseño de bases de datos y la arquitectura de servidores. Con experiencia en Next.js, FastAPI, FlightPHP, Docker, MySQL, Python, Bash y TailwindCSS, diseño y despliego sistemas robustos y escalables, incluyendo balanceadores de carga (Caddy, Nginx), pipelines de CI/CD, flujos de trabajo automatizados y despliegues en contenedores, asegurando entornos de producción confiables."
+        en: "Five years experience with Next.js, FastAPI, FlightPHP, Docker, SQL, OpenAPI, Typescript, Python, PHP, GO, Bash, TailwindCss, CI/CD, Caddy, Git, UI/UX, Linux",
+        es: "Cinco años de experiencia en Next.js, FastAPI, FlightPHP, Docker, SQL, OpenAPI, Typescript, Python, PHP, GO, Bash, TailwindCss, CI/CD, Caddy, Git, UI/UX, Linux"        
     },
     view_projects: {
-        en: "VIEW MY PROJECTS",
-        es: "VER MIS PROYECTOS"
+        en: "VIEW PROJECTS",
+        es: "VER PROYECTOS"
     },
     //contact
+    kevin_trejo: {
+        en: "Kevin Trejo",
+        es: "Kevin Trejo",
+    },
+    my_email: {
+        en: "kevintrejo4b@gmail.com",
+        es: "kevintrejo4b@gmail.com"
+    },
     message_sent: {
         en: "Message sent!",
-        es: "Mensage enviado",
+        es: "Mensaje enviado",
     },
-    messate_not_sent: {
+    message_not_sent: {
         en: "Something went wrong",
         es: "Algo salió mal",
     },
@@ -66,7 +74,173 @@ export const locales = {
         es: "Email",
     },
     message: {
-        en: "Write you message",
+        en: "Write your message",
         es: "Escriba su mensaje",
+    },
+    //about
+    education: {
+        en: "Education",
+        es: "Educación",
+    },
+    college: {
+        en: "College",
+        es: "Universidad",
+    },
+    uach: {
+        en: "UACH - Chihuahua",
+        es: "UACH - Chihuahua"
+    },
+    nmsu: {
+        en: "NMSU - New Mexico",
+        es: "NMSU - New Mexico",
+    },
+    degrees: {
+        en: "Degrees",
+        es: "Títulos",
+    },
+    ae_eng: {
+        en: "Aerospace Engineering",
+        es: "Ingeniería Aeroespacial"
+    },
+    m_eng: {
+        en: "Mechanical Engineering",
+        es: "Ingeniería Mecánica",
+    },
+    hobbies: {
+        en: "Hobbies",
+        es: "Pasatiempos",
+    },
+    hiking: {
+        en: "Hiking",
+        es: "Senderismo",
+    },
+    chess: {
+        en: "Chess",
+        es: "Ajedrez",
+    },
+    basketball: {
+        en: "Basketball",
+        es: "Básquetbol",
+    },
+    mountain_biking: {
+        en: "Mountain Biking",
+        es: "Ciclismo de Montaña",
+    },
+    math_challenges: {
+        en: "Math Challenges",
+        es: "Desafíos Matemáticos",
+    },
+    skills: {
+        en: "Skills",
+        es: "Habilidades",
+    },
+    technologies: {
+        en: "Technologies",
+        es: "Tecnologías",
+    },
+    techs: {
+        en: "Next.js, FastAPI, FlightPHP, SQL, OpenAPI, Docker, Git, Linux",
+        es: "Next.js, FastAPI, FlightPHP, SQL, OpenAPI, Docker, Git, Linux",
+    },
+    languages: {
+        en: "Languages",
+        es: "Lenguajes",
+    },
+    langs: {
+        en: "Spanish, English, Typescript, Python, PHP, Go, Bash",
+        es: "Spanish, English, Typescript, Python, PHP, Go, Bash",
+    },
+    //projects
+    work_experience: {
+        en: "Work Experience",
+        es: "Experiencia Laboral",
+    },
+    techs_label: {
+        en: "Techs:",
+        es: "Tecnologías:",
+    },
+    langs_label: {
+        en: "Langs:",
+        es: "Lenguajes:",
+    },
+    sofia_title: {
+        en: "SOFIA",
+        es: "SOFIA",
+    },
+    sofia_desc: {
+        en: "CIAD’s Academic Intelligence Platform designed to support curriculum design, thesis tracking and analysis, research trend mapping, and the center’s alignment with Mexico’s strategic development programs.",
+        es: "Plataforma de Inteligencia Académica del CIAD diseñada para apoyar el diseño curricular, el seguimiento y análisis de tesis, el mapeo de tendencias de investigación y la alineación del centro con los programas estratégicos de desarrollo de México.",
+    },
+    sofia_techs: {
+        en: "Next.js, FastAPI, FlightPHP, OpenAPI, Docker, OAuth 2.0, Linux, Git",
+        es: "Next.js, FastAPI, FlightPHP, OpenAPI, Docker, OAuth 2.0, Linux, Git",
+    },
+    sofia_langs: {
+        en: "Typescript, Python, PHP, Bash",
+        es: "Typescript, Python, PHP, Bash",
+    },
+    sofia_alt: {
+        en: "Screenshot of SOFIA platform",
+        es: "Captura de la plataforma SOFIA",
+    },
+    cryptobot_title: {
+        en: "CRYPTO BOT",
+        es: "CRYPTO BOT",
+    },
+    cryptobot_desc: {
+        en: "A 24/7 cryptocurrency monitoring and trading system. Cryptobot calculates real-time market indicators, evaluates trading strategies, and issues automated buy/sell signals. It adapts to market trends, optimizing decision-making and portfolio performance.",
+        es: "Sistema 24/7 de monitoreo y trading de criptomonedas. Calcula indicadores en tiempo real, evalúa estrategias y emite señales automáticas de compra/venta. Se adapta a las tendencias del mercado optimizando decisiones y rendimiento del portafolio.",
+    },
+    cryptobot_techs: {
+        en: "Next.js, OpenAPI, Gin, WebSockets, Docker, Linux, Git",
+        es: "Next.js, OpenAPI, Gin, WebSockets, Docker, Linux, Git",
+    },
+        cryptobot_langs: {
+        en: "Typescript, Go, Bash",
+        es: "Typescript, Go, Bash",
+    },
+    cryptobot_alt: {
+        en: "Dashboard of the crypto trading bot",
+        es: "Panel del bot de trading cripto",
+    },
+    cpa_title: {
+        en: "CPA REPORTS",
+        es: "REPORTES CPA",
+    },
+        cpa_desc: {
+        en: "The CIAD analytics platform for alumni and faculty insights. CPA Reports automates the generation of key institutional metrics including graduate outcomes, dropout rates, faculty activity, course popularity, and research. Designed for administrative efficiency, it enables staff to create customized reports that integrate seamlessly into existing workflows.",
+        es: "Plataforma analítica del CIAD para información de egresados y docentes. Automatiza métricas clave como resultados de egreso, deserción, actividad docente, popularidad de cursos e investigación. Diseñada para la eficiencia administrativa, permite crear reportes personalizados que se integran fácilmente al flujo de trabajo.",
+    },
+    cpa_techs: {
+        en: "Next.js, OpenAPI, Docker, Linux, Git",
+        es: "Next.js, OpenAPI, Docker, Linux, Git",
+    },
+    cpa_langs: {
+        en: "Typescript, Bash",
+        es: "Typescript, Bash",
+    },
+    cpa_alt: {
+        en: "CPA Reports analytics dashboards",
+        es: "Tableros analíticos de Reportes CPA",
+    },
+    maria_title: {
+        en: "MARIA",
+        es: "MARIA",
+    },
+    maria_desc: {
+        en: "CIAD’s intelligent assistant for curriculum modernization. Built on ChatGPT, MARIA supports teachers in course design by aligning content with XXI-century competencies and objectives. It tracks instructional theory, assists in drafting theoretical frameworks for new courses, and refines syllabi. The system integrates securely with SOFIA via OAuth 2.0 to retrieve course data automatically.",
+        es: "Asistente inteligente del CIAD para la modernización curricular. Basada en ChatGPT, MARIA apoya el diseño de cursos alineando el contenido con competencias y objetivos del siglo XXI. Supervisa la teoría instruccional, ayuda a redactar marcos teóricos y refina programas. Se integra de forma segura con SOFIA mediante OAuth 2.0 para obtener datos automáticamente.",
+    },
+    maria_techs: {
+        en: "OpenAPI, OAuth 2.0",
+        es: "OpenAPI, OAuth 2.0",
+    },
+    maria_langs: {
+        en: "JSON format",
+        es: "Formato JSON",
+    },
+    maria_alt: {
+        en: "MARIA assistant interface",
+        es: "Interfaz del asistente MARIA",
     },
 }
